@@ -1,6 +1,6 @@
 <?php
 
-namespace gabriel89oliveira\Layout;
+namespace gabriel89oliveira\LaravelStarter;
 
 use Illuminate\Support\ServiceProvider;
 

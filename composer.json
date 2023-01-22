@@ -1,5 +1,5 @@
 {
-    "name": "gabriel89oliveira/layout",
+    "name": "gabriel89oliveira/laravel-starter",
     "description": "Sidebar layout for Laravel application",
     "license": "MIT",
     "authors": [
@@ -12,13 +12,13 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "gabriel89oliveira\\Layout\\": "src/"
+            "gabriel89oliveira\\LaravelStarter\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "gabriel89oliveira\\Layout\\LayoutServiceProvider"
+                "gabriel89oliveira\\LaravelStarter\\LayoutServiceProvider"
             ]
         }
     }
