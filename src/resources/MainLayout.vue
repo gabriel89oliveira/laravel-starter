@@ -1,12 +1,15 @@
 <template>
 
-    <Nav></Nav>
+    <Nav :sidebar="sidebar" @toggleSidebar="toggleSidebar()"></Nav>
 
-    <Sidebar></Sidebar>
+    <Sidebar :sidebar="sidebar"></Sidebar>
 
-    <div class="sidebar" :class="[{'is-hidden': ! sidebar}]">
-        
+    <div class="w-full mt-16 duration-300 ease-in" :class="sidebar ? 'pl-64' : 'pl-0'" >
+        <div class="p-10">
+            teste
+        </div>
     </div>
+        
 
 </template>
 
@@ -20,6 +23,20 @@
         components: {
             Nav,
             Sidebar
+        },
+
+        data() {
+            return {
+                sidebar: true
+            }
+        }
+        ,
+        methods: {
+
+            toggleSidebar() {
+                this.sidebar = !this.sidebar
+            }
+
         }
         
     }
