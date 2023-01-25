@@ -1,10 +1,10 @@
 <template>
 
-    <Nav :sidebar="sidebar" @toggleSidebar="toggleSidebar()"></Nav>
+    <Nav></Nav>
 
-    <Sidebar :sidebar="sidebar"></Sidebar>
+    <Sidebar></Sidebar>
 
-    <div class="w-full mt-16 duration-300 ease-in" :class="sidebar ? 'pl-64' : 'pl-0'" >
+    <div class="w-full mt-16 duration-200 ease-in" :class="toggleSidebar.value ? 'pl-64' : 'pl-0'" >
         <div class="p-10">
             teste
         </div>
@@ -20,24 +20,12 @@
 
     export default {
 
+        inject: ['toggleSidebar'],
+
         components: {
             Nav,
             Sidebar
         },
-
-        data() {
-            return {
-                sidebar: true
-            }
-        }
-        ,
-        methods: {
-
-            toggleSidebar() {
-                this.sidebar = !this.sidebar
-            }
-
-        }
         
     }
 

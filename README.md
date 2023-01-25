@@ -17,3 +17,22 @@ It will add to you Vue folder some files for main layout. <br>
 ```
 php artisan vendor:publish --tag=laravel-sidebar-layout
 ```
+
+In your app.js file, import ref
+
+```diff
++   import { ref } from 'vue'
+```
+
+then update createApp function with the following
+
+```diff
+return createApp({ 
+    render: () => h(App, props),
++   provide() {
++       return {
++           toggleSidebar: ref(true)
++       }
+    }
+})
+```
