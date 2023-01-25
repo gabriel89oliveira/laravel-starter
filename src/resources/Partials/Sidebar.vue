@@ -8,11 +8,11 @@
 
         <div class="overflow-y-auto grow">
 
-            <MenuButton>
+            <MenuButton :href="route('home')">
                 First Button
             </MenuButton>
 
-            <MenuButton>
+            <MenuButton :href="route('home')">
                 Second Button
             </MenuButton>
 
