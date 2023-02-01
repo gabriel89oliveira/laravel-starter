@@ -16,7 +16,7 @@ class LayoutServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/resources/MainLayout.vue' => $this->app->resourcePath() . '/js/Layouts/MainLayout.vue',
             __DIR__ . '/resources/Partials' => $this->app->resourcePath() . '/js/Layouts/Partials',
-            _DIR__ . '/resources/Components' => $this->app->resourcePath() . '/js/Components',
+            __DIR__ . '/resources/Components' => $this->app->resourcePath() . '/js/Components',
         ], 'laravel-sidebar-layout');
     }
 }
